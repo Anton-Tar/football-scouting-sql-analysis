@@ -87,7 +87,7 @@ Based on the final analysis, these ten players represent the best combination of
 - | Player Name | Potential | Engine Score |
 
 - | **Jackie McNamara**     | 88 | 76 | 
-- | **Guilherme Santos**.   | 89 | 75 | 
+- | **Guilherme Santos**    | 89 | 75 | 
 - | **Garry Bocaly**        | 89 | 74 |  
 - | **Simone Benedetti**    | 86 | 72 | 
 - | **Roderick Miranda**    | 89 | 72 | 
