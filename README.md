@@ -1,8 +1,8 @@
 # Football Data Analysis Project: A Data-Driven Scouting Model
-**Author:** Anton Tarusau
-**Project Goal:** Finding Undervalued Talented Players With Elite Work Rate And Identifying The Leagues They Play In Using SQL.
-**Problem Statement:** Organisations operating with limited capital must find ways to compete with high-budget incumbents. In the professional sports industry, this manifests as "Market Inefficiency." This project develops a quantitative model to identify high-value assets (players) in undervalued secondary markets (leagues) to maximise ROI.
-**The Methodology:** This analysis was conducted in three distinct phases, moving from broad talent discovery to specific market procurement.
+- **Author:** Anton Tarusau
+- **Project Goal:** Finding Undervalued Talented Players With Elite Work Rate And Identifying The Leagues They Play In Using SQL.
+- **Problem Statement:** Organisations operating with limited capital must find ways to compete with high-budget incumbents. In the professional sports industry, this manifests as "Market Inefficiency." This project develops a quantitative model to identify high-value assets (players) in undervalued secondary markets (leagues) to maximise ROI.
+- **The Methodology:** This analysis was conducted in three distinct phases, moving from broad talent discovery to specific market procurement.
 
 
 ## Phase 1: Environment & Setup
@@ -61,7 +61,7 @@ ORDER BY engine_score DESC
 LIMIT 10;
 ```
 
-### Phase 4: Market Value Analysis (Geographic Arbitrage Analysis)
+## Phase 4: Market Value Analysis (Geographic Arbitrage Analysis)
 - **Goal:** Pinpoint which leagues offer the best players for cheaper prices.
 - **Criteria:** Analysed league-wide averages to find where the value_score is relatively high comparing to player_rating.
 - **Outcome:** Identification of Market Arbitrage opportunities in secondary European leagues.
@@ -84,24 +84,24 @@ ORDER BY value_score DESC
 ## Key Findings: Top 10 Recommended Targets
 Based on the final analysis, these ten players represent the best combination of high growth potential and elite work rate.
 
-| Player Name | Potential | Engine Score |
+- | Player Name | Potential | Engine Score |
 
-| **Jackie McNamara**     | 88 | 76 | 
-| **Guilherme Santos**.   | 89 | 75 | 
-| **Garry Bocaly**        | 89 | 74 |  
-| **Simone Benedetti**    | 86 | 72 | 
-| **Roderick Miranda**    | 89 | 72 | 
-| **Dean Marney**         | 89 | 72 |  
-| **Isaiah Osbourne**     | 87 | 71 | 
-| **Victor Mareco**       | 90 | 70 | 
-| **Eloge Enza-Yamissi**  | 87 | 69 |  
-| **Andreas Christensen** | 87 | 69 | 
+- | **Jackie McNamara**     | 88 | 76 | 
+- | **Guilherme Santos**.   | 89 | 75 | 
+- | **Garry Bocaly**        | 89 | 74 |  
+- | **Simone Benedetti**    | 86 | 72 | 
+- | **Roderick Miranda**    | 89 | 72 | 
+- | **Dean Marney**         | 89 | 72 |  
+- | **Isaiah Osbourne**     | 87 | 71 | 
+- | **Victor Mareco**       | 90 | 70 | 
+- | **Eloge Enza-Yamissi**  | 87 | 69 |  
+- | **Andreas Christensen** | 87 | 69 | 
 
 **Final Recommendation:** To maximise ROI, scouting efforts should be shifted away from high-premium leagues (e.g., Premier League) toward the **Netherlands Eredivisie and Belgium Jupiler League**, which show the highest density of work rate specialists relative to market price.
 
 ## Challenges And Constraints:
-**Data Normalisation:** The dataset contained players with varying game counts. I implemented MAX() and GROUP BY logic to ensure that a single bad performance didn't skew the 'Peak Potential' of a high-value asset.
-**Sample Representation:** To ensure market analysis was statistically significant, I utilised COUNT(DISTINCT) to verify a sufficient pool size before drawing conclusions about league-wide value.
+- **Data Normalisation:** The dataset contained players with varying game counts. I implemented MAX() and GROUP BY logic to ensure that a single bad performance didn't skew the 'Peak Potential' of a high-value asset.
+- **Sample Representation:** To ensure market analysis was statistically significant, I utilised COUNT(DISTINCT) to verify a sufficient pool size before drawing conclusions about league-wide value.
 
 ## Technical Stack
 - **Language:** SQL (SQLite)
