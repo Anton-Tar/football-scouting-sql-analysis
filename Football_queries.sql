@@ -1,3 +1,4 @@
+-- PHASE 1: Identifying High-Potential Players
 SELECT
   p.player_name,
   MAX(pa.potential) AS peak_potential,
@@ -10,6 +11,7 @@ HAVING peak_rating < 75
 AND peak_potential > 85
 ORDER BY growth_potential DESC;
 
+-- PHASE 2: Calculating the Engine Score
 WITH High_Potential_Players AS (
   SELECT 
      p.player_name, 
@@ -32,6 +34,7 @@ GROUP BY hp.player_name
 ORDER BY engine_score DESC
 LIMIT 10;
 
+-- PHASE 3: Market Arbitrage Analysis
 SELECT
   l.name AS league,
   COUNT(DISTINCT p.player_api_id) AS pool_size,
