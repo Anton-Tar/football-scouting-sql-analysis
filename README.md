@@ -60,6 +60,9 @@ GROUP BY hp.player_name
 ORDER BY engine_score DESC
 LIMIT 10;
 ```
+### Top 10 Valuable Players
+![Valuable Players Table](Top_10_Valuable_Players.jpg)
+
 
 ## Phase 4: Market Value Analysis (Geographic Arbitrage Analysis)
 - **Goal:** Pinpoint which leagues offer the best players for cheaper prices.
@@ -80,6 +83,9 @@ JOIN Player p ON pa.player_api_id = p.player_api_id
 GROUP BY l.name
 ORDER BY value_score DESC
 ```
+### Market Audit Results:
+![League Value Table](Market_Value_Results.jpg)
+
 
 ## Key Findings: Top 10 Recommended Targets
 Based on the final analysis, these ten players represent the best combination of high growth potential and elite work rate.
