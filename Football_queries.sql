@@ -6,8 +6,8 @@ SELECT
 FROM Player p
 JOIN Player_Attributes pa ON p.player_api_id = pa.player_api_id
 GROUP BY p.player_name
-HAVING peak_rating &lt; 75
-AND peak_potential &gt; 85
+HAVING peak_rating < 75
+AND peak_potential > 85
 ORDER BY growth_potential DESC;
 
 WITH High_Potential_Players AS (
@@ -20,7 +20,7 @@ WITH High_Potential_Players AS (
   FROM Player p
   JOIN Player_Attributes pa ON p.player_api_id = pa.player_api_id
   GROUP BY p.player_name
-  HAVING peak_potential &gt; 85 AND peak_rating &lt; 75 AND growth_potential &gt;= 15
+  HAVING peak_potential > 85 AND peak_rating < 75 AND growth_potential >= 15
 )
 SELECT 
   hp.player_name,
@@ -42,4 +42,4 @@ JOIN Match m ON l.id = m.league_id
 JOIN Player_Attributes pa ON m.home_player_1 = pa.player_api_id
 JOIN Player p ON pa.player_api_id = p.player_api_id
 GROUP BY l.name
-ORDER BY value_score DESC
+ORDER BY value_score DESC;
