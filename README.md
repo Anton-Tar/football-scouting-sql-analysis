@@ -62,6 +62,7 @@ LIMIT 10;
 ```
 ### Top 10 Valuable Players
 ![Valuable Players Table](Top_10_Valuable_Players.jpg)
+
 *Figure 1: High-Potential Asset Identification – Top 10 Specialists by Engine Score.*
 
 
@@ -86,6 +87,7 @@ ORDER BY value_score DESC
 ```
 ### Market Audit Results:
 ![League Value Table](Market_Value_Results.jpg)
+
 *Figure 2: Geographic Market Arbitrage – Comparison of Physical Output Efficiency across European Leagues.*
 
 
