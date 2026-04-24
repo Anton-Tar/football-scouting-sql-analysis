@@ -86,7 +86,7 @@ GROUP BY l.name
 ORDER BY value_score DESC
 ```
 ### Market Analysis
-![League Value Table](Market_Value_Results.jpg)
+![League Value Table](Market_Analysis.jpg)
 
 *Figure 2: Geographic Market Arbitrage – Comparison of Physical Output Efficiency across European Leagues.*
 
